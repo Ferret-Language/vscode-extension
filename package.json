@@ -2,7 +2,7 @@
   "name": "ferret",
   "displayName": "Ferret",
   "description": "Ferret Language Support",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "icon": "ferret.png",
   "publisher": "Ferret",
   "engines": {
@@ -20,26 +20,56 @@
     "languages": [
       {
         "id": "ferret-fer",
-        "aliases": ["Ferret (.fer)"],
-        "extensions": [".fer", ".ferret"],
+        "aliases": [
+          "Ferret (.fer)"
+        ],
+        "extensions": [
+          ".fer",
+          ".ferret"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": {"dark": "ferret.png", "light": "ferret.png"}
+        "icon": {
+          "dark": "ferret.png",
+          "light": "ferret.png"
+        }
       },
       {
         "id": "ferret-mod",
-        "aliases": ["Ferret Module", "RET"],
-        "extensions": [".ret"],
-        "filenames": ["fer.ret"],
+        "aliases": [
+          "Ferret Module",
+          "RET"
+        ],
+        "extensions": [
+          ".ret"
+        ],
+        "filenames": [
+          "fer.ret"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": {"dark": "ferret_mod.png", "light": "ferret_mod.png"}
+        "icon": {
+          "dark": "ferret_mod.png",
+          "light": "ferret_mod.png"
+        }
       },
       {
         "id": "ferret-lock",
-        "aliases": ["Ferret Lock", "LOCK"],
-        "extensions": [".lock", ".ferret.lock"],
-        "filenames": ["ferret.lock", "fer.lock"],
+        "aliases": [
+          "Ferret Lock",
+          "LOCK"
+        ],
+        "extensions": [
+          ".lock",
+          ".ferret.lock"
+        ],
+        "filenames": [
+          "ferret.lock",
+          "fer.lock"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": {"dark": "ferret_lock.png", "light": "ferret_lock.png"}
+        "icon": {
+          "dark": "ferret_lock.png",
+          "light": "ferret_lock.png"
+        }
       }
     ],
     "grammars": [
@@ -57,7 +87,9 @@
         "language": "ferret-lock",
         "scopeName": "source.json",
         "path": "./syntaxes/lock.tmLanguage.json",
-        "injectTo": ["source.json"],
+        "injectTo": [
+          "source.json"
+        ],
         "embeddedLanguages": {},
         "grammar": "json"
       }
@@ -138,13 +170,13 @@
           "description": "Enable code completion support."
         },
         "ferretLanguageServer.hover.enabled": {
-          "type": "boolean", 
+          "type": "boolean",
           "default": true,
           "description": "Enable hover information support."
         },
         "ferretLanguageServer.definition.enabled": {
           "type": "boolean",
-          "default": true, 
+          "default": true,
           "description": "Enable go-to-definition support."
         },
         "ferretLanguageServer.diagnostics.enabled": {
