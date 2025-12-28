@@ -1,6 +1,6 @@
 # Ferret Language Support
 
-VS Code extension providing syntax highlighting and basic language features for the [Ferret programming language](https://github.com/itsfuad/Ferret-Compiler).
+VS Code extension providing syntax highlighting and basic language features for the [Ferret programming language](https://github.com/Ferret-Language/Ferret-Compiler).
 
 ## Features
 
@@ -10,7 +10,7 @@ VS Code extension providing syntax highlighting and basic language features for 
 
 ## Installation
 
-1. Download the latest `.vsix` file from the [Releases](https://github.com/itsfuad/Ferret-Language-Support/releases).
+1. Download the latest `.vsix` file from the [Releases](https://github.com/Ferret-Language/Ferret-Language-Support/releases).
 2. Install it in VS Code:
 
    ```bash
@@ -24,7 +24,7 @@ VS Code extension providing syntax highlighting and basic language features for 
 
 ## Requirements
 
-* (Optional) [Ferret Compiler](https://github.com/itsfuad/Ferret-Compiler) available in `PATH` for advanced features.
+* (Optional) [Ferret Compiler](https://github.com/Ferret-Language/Ferret-Compiler) available in `PATH` for advanced features.
 
 ## License
 
