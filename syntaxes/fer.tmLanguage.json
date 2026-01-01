@@ -90,6 +90,9 @@
       "include": "#punctuation"
     },
     {
+      "include": "#lifetimes"
+    },
+    {
       "include": "#strings"
     },
     {
@@ -653,7 +656,7 @@
       "patterns": [
         {
           "comment": "named lifetime parameters",
-          "match": "(['])([a-zA-Z_][0-9a-zA-Z_]*)(?!['])\\b",
+          "match": "(?<!&)(['])([a-zA-Z_][0-9a-zA-Z_]*)(?!['])\\b",
           "captures": {
             "1": {
               "name": "punctuation.definition.lifetime.fer"
@@ -665,15 +668,12 @@
         },
         {
           "comment": "borrowing references to named lifetimes",
-          "match": "(\\&)(['])([a-zA-Z_][0-9a-zA-Z_]*)(?!['])\\b",
+          "match": "(&')([a-zA-Z_][0-9a-zA-Z_]*)(?!['])\\b",
           "captures": {
             "1": {
               "name": "keyword.operator.borrow.fer"
             },
             "2": {
-              "name": "punctuation.definition.lifetime.fer"
-            },
-            "3": {
               "name": "entity.name.type.lifetime.fer"
             }
           }
