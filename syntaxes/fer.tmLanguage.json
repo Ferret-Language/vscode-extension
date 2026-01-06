@@ -494,7 +494,7 @@
         {
           "comment": "storage keywords",
           "name": "keyword.other.fer",
-          "match": "\\b(let|const|mut)\\b"
+          "match": "\\b(let|const)\\b"
         },
         {
           "comment": "type keyword",
@@ -509,7 +509,7 @@
         {
           "comment": "struct keyword",
           "name": "keyword.declaration.struct.fer",
-          "match": "\\b(struct)\\b"
+          "match": "\\b(mut|struct)\\b"
         },
         {
           "comment": "storage modifiers",
@@ -530,11 +530,6 @@
           "comment": "logical operators",
           "name": "keyword.operator.logical.fer",
           "match": "(\\^|\\||\\|\\||&&|<<|>>|!)(?!=)"
-        },
-        {
-          "comment": "mutable reference operator &mut",
-          "name": "keyword.operator.borrow.mutable.fer",
-          "match": "&mut\\b"
         },
         {
           "comment": "mutable reference operator &' (legacy)",
