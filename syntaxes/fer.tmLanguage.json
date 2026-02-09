@@ -527,6 +527,11 @@
           "match": "\\bfn\\b"
         },
         {
+          "comment": "error propagation operator",
+          "name": "keyword.operator.error-propagate.fer",
+          "match": "!!"
+        },
+        {
           "comment": "logical operators",
           "name": "keyword.operator.logical.fer",
           "match": "(\\^|\\||\\|\\||&&|<<|>>|!)(?!=)"
